@@ -1,0 +1,470 @@
+body
+{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.block
+{
+    padding: 50px;
+}
+
+#home, #contact
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFF;
+}
+
+#home a, #contact a
+{
+    color: #FFF;
+}
+
+#projects, #endingFooter
+{
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #000;
+}
+
+#endingFooter
+{
+    font-size: 12px;
+}
+
+#projects a, #endingFooter a
+{
+    color: #000;
+}
+
+#credits
+{
+    font-size: 10px;
+}
+
+figcaption
+{
+    font-size: 15px;
+}
+
+#about
+{
+    background-color: rgba(256, 256, 256, 0.75);
+    color: rgb(210, 0, 0);
+}
+
+#about a
+{
+    color: rgb(210, 0, 0);
+}
+
+h1
+{
+    margin-bottom: 50px;
+}
+
+.clickbox
+{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: 35px auto; /* setting vertical margin to auto is going to center the div */
+    padding: 20px;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.iconBox
+{
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.clickbox:hover, .iconBox:hover
+{
+    cursor: pointer;
+}
+
+.clickbox:hover
+{
+    background-color: #666;
+}
+
+.iconLogo
+{
+    color: #FFF;
+}
+
+#projects .iconLogo
+{
+    color: #000;
+}
+
+.linkedinBox
+{
+    background-color: #0077B5;
+}
+
+.linkedinBox:hover
+{
+    background-color: #004493;
+}
+
+.githubBox
+{
+    background-color: #211F1F;
+}
+
+.githubBox:hover
+{
+    background-color: #000D0D;
+}
+
+.project
+{
+    position: relative;
+    z-index: 1;
+    border: 5px solid #000;
+}
+
+.projectTitle
+{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.projectBorderBottom
+{
+    border-bottom: 2px solid #000;
+}
+
+.projectViewWrapper
+{
+    display: flex;
+}
+
+.projectView
+{
+    box-sizing: border-box;
+    /* display: inline-block; */
+    /* line break between projectView divs in HTML needs to be removed */
+    width: 50%;
+    max-width: unset;
+    margin: 0;
+    border: 2px solid #000;
+    border-radius: 0;
+    padding: 10px 2px;
+    margin-bottom: 20px;
+}
+
+.projectViewWrapper > div:first-child
+{
+    border-right: none;
+    border-bottom-left-radius: 5px;
+}
+
+.projectViewWrapper > div:last-child
+{
+    border-bottom-right-radius: 5px;
+}
+
+#p5js-sketch-container
+{
+    display: block;
+    margin: 0px 0px 50px 0px;
+    padding: 0;
+}
+
+canvas
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.icon-img
+{
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.techStackContainer
+{
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+    padding-bottom: 25px;
+}
+
+.techStack
+{
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.fa-js
+{
+    color: #F0DB4F;
+}
+
+.fa-css3-alt
+{
+    color: #2965f1;
+}
+
+.fa-html5
+{
+    color: #F16529;
+}
+
+.fa-bootstrap
+{
+    color: #553C7B;
+}
+
+.fab
+{
+    font-size: 30px;
+}
+
+#moreAboutMe
+{
+    padding-top: 25px;
+    border-top: 2px solid;
+}
+
+#contact a:hover, #endingFooter a:hover
+{
+    color: #666;
+}
+
+@media(max-width: 400px)
+{
+    body
+    {
+        font-size: 15px;
+    }
+    .projectViewCaption
+    {
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 440px)
+{
+    .block
+    {
+        padding: 25px;
+    }
+    .appearingNavigation .clickbox
+    {
+        max-width: 50px;
+    }
+}
+
+@media(max-width: 1199px)
+{
+    #project2
+    {
+        border-top: none;
+    }
+}
+
+@media(min-width: 1200px)
+{
+    #project2
+    {
+        border-left: none;
+    }
+}
+
+@media(min-width: 768px)
+{
+    .projectDescription
+    {
+        text-align: left;
+    }
+}
+
+.projectImgWrapper
+{
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* Thanks to this one line, our relative system is not whole website but photo3. */
+    position: relative;
+    
+}
+
+/* used instead of predefined img-fluid (which has "max-width: 100%;" instead of "width: 100%;" */
+.projectImg
+{
+    width: 100%;
+    height: auto;
+}
+
+.projectImgWrapper .lensEnlarge
+{
+    /* Because of the "position: relative" in .overlay selector, this "position: absolute"
+       property becomes relative to the new coordinate system (because div .link is inside
+       div .overlay and div .overlay is positioned relatively to the div .photo3) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* this is a shorthand of translateX(-50%) and translateY(-50%) */
+    /* styling the lens */
+    font-size: 50px;
+    /* make the lens invisible untill hovering over it */
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.projectImgWrapper:hover .lensEnlarge
+{
+    opacity: 0.5;
+}
+
+#project2 .projectImgWrapper:hover .lensEnlarge
+{
+    color: #FFF;
+}
+
+.modal
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modalImg
+{
+    margin: auto;
+    display: block;
+    height: 80%;
+}
+
+.close
+{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.close:hover,
+.close:active
+{
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sideArrow
+{
+    position: fixed;
+    top: 12vh;
+    right: 0;
+    display: none;
+    width: 20px;
+    height: 35px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    border: 3px solid #666;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#sideArrow:hover
+{
+    cursor: pointer;
+}
+
+.fa-caret-left
+{
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    color: #666;
+}
+
+.appearingNavigation{
+    position: fixed;
+    z-index: 10;
+    top: 12vh;
+    right: 20px;
+    width: auto;
+    margin-left: 0;
+    /* do not display unless scrolled down by x pixels */
+    display: none;
+}
+
+.appearingNavigation .clickbox
+{
+    color: #666;
+    background-color: #FFF;
+    max-width: 125px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 0;
+    border-bottom: none;
+    font-weight: 700;
+}
+
+.appearingNavigation [href="#home"] .clickbox
+{
+    border-top-left-radius: 5px;
+}
+
+.appearingNavigation [href="#contact"] .clickbox
+{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 2px solid;
+}
+
+body::-webkit-scrollbar
+{
+    background-color: #666;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #000;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-corner
+{
+    background-color: #000;
+}
+
+.backgroundPattern
+{
+    width: inherit;
+    height: inherit;
+    background: url("img/dark-honeycomb.png");
+}
+
