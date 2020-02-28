@@ -39,7 +39,7 @@
     <body>
         <div class="backgroundPattern">
             <nav>
-                <div class="container">
+                <div class="container" id="sideNav">
                     <div id="sideArrow">
                         <i class="fas fa-caret-left"></i>
                     </div>
@@ -126,9 +126,13 @@
                                                         </div>
                                                 </div>
                                                 <div class="projectViewWrapper">
-                                                    <div class="clickbox projectView">
+                                                    <div class="clickbox projectView unavailable">
                                                         <i class="icon-eye iconLogo"></i>
-                                                        <div class="projectViewCaption">View Demo</div>
+                                                        <a href="">
+                                                            <p class="projectViewCaption">
+                                                                <span class="change-text-on-hover">View Demo</span>
+                                                            </p>
+                                                        </a>
                                                     </div><div class="clickbox projectView">
                                                         <a target="_blank" href="https://github.com/MarcinChamera/JavaPracownia/tree/master/Maze_Generator_Solver_Marcin_Chamera/src/sample">
                                                             <i class="icon-code iconLogo"></i>
@@ -161,7 +165,72 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="project col-sm-12 col-xl-6" id="project2">
+                                        <h2 class="projectTitle">Instagram Followers</h2>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="projectImgWrapper">
+                                                    <video controls width="100%" height="auto" poster="" loop=true muted=true>
+                                                        <source src="" type="video/mp4">
+                                                        <div style="border: 1px solid black ;">
+                                                            Sorry, your browser does not support this video player.
+                                                        </div>
+                                                </div>
+                                                <div class="projectViewWrapper">
+                                                    <div class="clickbox projectView unavailable">
+                                                        <i class="icon-eye iconLogo"></i>
+                                                        <a href="">
+                                                            <p class="projectViewCaption">
+                                                                <span class="change-text-on-hover">View Demo</span>
+                                                            </p>
+                                                        </a>
+                                                    </div><div class="clickbox projectView">
+                                                        <a target="_blank" href="https://github.com/MarcinChamera/ig-followers">
+                                                            <i class="icon-code iconLogo"></i>
+                                                            <div class="projectViewCaption">View Source</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="projectBorderBottom">
+                                                    <h3>Description:</h3>
+                                                    <p class="projectDescription">Find people who does not follow you back.</p>
+                                                </div>
+                                                <div class="projectBorderBottom">
+                                                    <h3>Languages used:</h3>
+                                                    <figure>
+                                                        <i class="fab fa-python"></i>
+                                                    </figure>
+                                                    <figcaption>Python</figcaption>
+                                                    <figure>
+                                                        <i class="fab fa-html5"></i>
+                                                    </figure>
+                                                    <figcaption>HTML</figcaption>
+                                                    <figure>
+                                                        <i class="fab fa-css3-alt"></i>
+                                                    </figure>
+                                                    <figcaption>CSS</figcaption>
+                                                </div>
+                                                <div class="projectBorderBottom">
+                                                    <h3>Frameworks used:</h3>
+                                                    <figure>
+                                                        <i class="fas fa-flask"></i>
+                                                    </figure>
+                                                    <figcaption>Flask</figcaption>
+                                                </div>
+                                                <h3>Notable features:</h3>
+                                                <ul class="text-left">
+                                                    <li>Entire IG navigation is handled without user's action</li>
+                                                    <li>Custom login panel</li>
+                                                    <li>Run on your own Linux/Windows machine using scripts which can be found in "View Source"</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="project col-sm-12 col-xl-6" id="project2">
                                         <h2 class="projectTitle">Space Invaders</h2>
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -178,9 +247,12 @@
                                                 <div class="projectViewWrapper">
                                                     <div class="clickbox projectView">
                                                         <i class="icon-eye iconLogo"></i>
-                                                        <div class="projectViewCaption">View Demo</div>
-                                                    </div>
-                                                    <div class="clickbox projectView">
+                                                        <a href="">
+                                                            <p class="projectViewCaption">
+                                                                <span class="change-text-on-hover">View Demo</span>
+                                                            </p>
+                                                        </a>
+                                                    </div><div class="clickbox projectView">
                                                         <a target="_blank" href="https://github.com/MarcinChamera/Space-Invaders">
                                                             <i class="icon-code iconLogo"></i>
                                                             <div class="projectViewCaption">View Source</div>
@@ -212,7 +284,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!--
                                     <div class="project col-sm-12 col-xl-6" id="project3">
                                         <h2 class="projectTitle">A-MAZE-ING</h2>
@@ -350,7 +422,7 @@
                                                 <h3>Notable features:</h3>
                                                 <ul class="text-left">
                                                     <li>different logo display depending on screen width</li>
-                                                    <li>every bounce the ball goes lower because of added gravity</li>
+                                                    <li>every bounce the ball goes lower because of added accelaration</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -421,8 +493,10 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-4 align-self-center">
-                                        <div class="clickbox">
-                                            <a href="https://www.youtube.com/watch?v=2BoLJEt9Z7c">Resume</a>
+                                        <div class="clickbox unavailable">
+                                            <a href="">
+                                                 <p><span class="change-text-on-hover">Resume</span></p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="col-sm-4 align-self-center">
@@ -462,10 +536,9 @@
 
             <footer>
                 <div id="endingFooter">
-                    <p>Created by Marcin Chamera 2019 &#169. All rights reserved.</p>
-                    <div id="credits">
-                        <a href="#" target="_blank">Jquery Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
-                    </div>
+                    <p>Created by Marcin Chamera 2019 &#169.</p>
+                    <div>
+                        All rights reserved.</div>
                 </div>
             </footer>
         </div>

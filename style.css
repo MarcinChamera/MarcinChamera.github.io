@@ -42,11 +42,6 @@ a:hover
     color: #000;
 }
 
-#credits
-{
-    font-size: 10px;
-}
-
 figcaption
 {
     font-size: 15px;
@@ -107,6 +102,23 @@ h1
     color: #000;
 }
 
+.clickbox a p {
+    margin-bottom: 0;
+}
+
+.clickbox a p .change-text-on-hover {
+    content: "Resume";
+}
+
+.clickbox:hover a p .change-text-on-hover {
+    display: none;
+}
+
+.clickbox:hover a p::after {
+    content: 'Unavailable';
+    font-weight: bold;
+}
+
 .linkedinBox
 {
     background-color: #0077B5;
@@ -145,6 +157,14 @@ h1
 .projectBorderBottom
 {
     border-bottom: 2px solid #000;
+}
+
+.projectBorderBottom figure {
+    margin-bottom: 0;
+}
+
+.projectBorderBottom figcaption {
+    margin-bottom: 15px;
 }
 
 .projectViewWrapper
@@ -393,8 +413,8 @@ canvas
     background-color: #FFF;
     box-sizing: border-box;
     border: 5px solid black;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #sideArrow:hover
@@ -416,7 +436,7 @@ canvas
     position: fixed;
     z-index: 10;
     top: 12vh;
-    right: 20px;
+    right: 25px;
     width: auto;
     margin-left: 0;
     /* do not display unless scrolled down by x pixels */
@@ -473,4 +493,3 @@ body::-webkit-scrollbar-corner
     height: inherit;
     background: url("img/dark-honeycomb.png");
 }
-

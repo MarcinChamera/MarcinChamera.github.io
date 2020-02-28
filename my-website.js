@@ -42,18 +42,8 @@ var sideArrow = document.getElementById("sideArrow");
 sideArrow.onclick = function()
 {
     clickCounter++;
-    if(clickCounter % 2 == 0)
-    {
-        appearingNavigation.style.display = "none";
-        sideArrow.style.borderBottomLeftRadius = "5px";
-        sideArrow.style.borderTopLeftRadius= "5px";
-    }
-    else
-    {
-        appearingNavigation.style.display = "inherit";
-        sideArrow.style.borderBottomLeftRadius = "0px";
-        sideArrow.style.borderTopLeftRadius = "0px";
-    }
+    if(clickCounter % 2 == 0) appearingNavigation.style.display = "none";
+    else appearingNavigation.style.display = "inherit";
 }
 
 appearingNavigation.onclick = function()
@@ -61,3 +51,16 @@ appearingNavigation.onclick = function()
     clickCounter++;
     appearingNavigation.style.display = "none";
 }
+
+function closest(e, t){ 
+    return !e? false : e === t ? true : closest(e.parentNode, t);
+}
+
+var sideNav = document.getElementById("sideNav");
+
+document.body.addEventListener("click", function(e) {
+    if (!closest(e.target, sideNav)) {
+        appearingNavigation.style.display = "none";
+        clickCounter++;
+    }
+});
