@@ -388,11 +388,11 @@ canvas
     top: 12vh;
     right: 0;
     display: none;
-    width: 20px;
-    height: 35px;
+    width: 30px;
+    height: 45px;
     background-color: #FFF;
     box-sizing: border-box;
-    border: 3px solid #666;
+    border: 5px solid black;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -400,14 +400,16 @@ canvas
 #sideArrow:hover
 {
     cursor: pointer;
+    background-color: #666;
 }
 
 .fa-caret-left
 {
     position: absolute;
-    right: 0;
-    font-size: 30px;
-    color: #666;
+    right: -2px;
+    top: -12px;
+    font-size: 60px;
+    color: black;
 }
 
 .appearingNavigation{
@@ -423,7 +425,7 @@ canvas
 
 .appearingNavigation .clickbox
 {
-    color: #666;
+    color: black;
     background-color: #FFF;
     max-width: 125px;
     padding: 0;
@@ -431,6 +433,10 @@ canvas
     border-radius: 0;
     border-bottom: none;
     font-weight: 700;
+}
+
+.appearingNavigation .clickbox:hover {
+    background-color: #666;
 }
 
 .appearingNavigation [href="#home"] .clickbox
